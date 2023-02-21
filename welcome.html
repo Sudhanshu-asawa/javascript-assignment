@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <span>Welcome</span>
+        <span id="fname"></span>
+        <span id="lname"></span>
+    </div>
+</body>
+
+<script>
+    var fname = localStorage.getItem("fname");
+    var lname = localStorage.getItem("lname");
+
+    document.getElementById('fname').innerHTML = fname
+    document.getElementById('lname').innerHTML = lname
+
+</script>
+
+<style>
+    body {
+        background: #000;
+    }
+
+    div {
+        font-weight: bolder;
+        font-style: italic;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: beige;
+        text-align: center;
+        font-size: xxx-large;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20%;
+        border: 5px solid;
+        border-image: linear-gradient(45deg, purple, orange) 1;
+        border-radius: 50px;
+        border-width: 5px;
+    }
+</style>
+
+</html>
